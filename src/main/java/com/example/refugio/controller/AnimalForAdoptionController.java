@@ -13,7 +13,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/inAdoption")
-
 public class AnimalForAdoptionController {
 
     @Autowired
