@@ -5,13 +5,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.http.HttpStatus;
 
+
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
-public class Response {
+public class AnimalNotFoundCustomExceptionResponse {
 
 
-    private String statusCode;
+    private HttpStatus statusCode;
     private String statusMsg;
 
 }
