@@ -8,6 +8,8 @@ import lombok.Data;
 
 
 @Data
+//@NoArgsConstructor
+//@AllArgsConstructor
 @Entity
 @Table(name = "animals_for_adoption")
 public class AnimalForAdoption {
@@ -18,7 +20,7 @@ public class AnimalForAdoption {
     private Integer idAnimal;
 
     @NotBlank(message = "must not be blank")
-    @Size(min=3,max=10, message = "Name must be at least 3 Characters long and 10 as maximum")
+    @Size(min=3,max=10, message = "Name must be at least 3 Characters long")
     private String name;
 
     @Min(0)
@@ -26,7 +28,7 @@ public class AnimalForAdoption {
     private int age;
 
     @NotBlank(message = "must not be blank")
-    @Size(min=4,max=10, message = "Name must be at least 3 Characters long and 10 as maximum")
+    @Size(min=4,max=10, message = "Name must be at least 3 Characters long")
     private String specie;
 
 
